@@ -1,0 +1,32 @@
+ruby-faye-websocket (0.11.0-1) unstable; urgency=medium
+
+  [ Utkarsh Gupta ]
+  * Add salsa-ci.yml
+
+  [ Debian Janitor ]
+  * Bump debhelper from old 11 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit,
+    Repository, Repository-Browse.
+  * Update standards version to 4.4.1, no changes needed.
+
+  [ Cédric Boutillier ]
+  * [ci skip] Update team name
+  * [ci skip] Add .gitattributes to keep unwanted files out
+    of the source package
+
+  [ Utkarsh Gupta ]
+  * New upstream version 0.11.0
+    - Implement SSL certificate verification.
+      (Fixes: CVE-2020-15133) (Closes: #967061)
+  * Fix package wrt cme
+  * Drop unnecessary dependency on ruby interpreter
+  * Use @d.o address
+
+ -- Utkarsh Gupta <utkarsh@debian.org>  Sat, 02 Jan 2021 18:05:54 +0530
+
+ruby-faye-websocket (0.10.7-1) unstable; urgency=medium
+
+  * Initial release (Closes: #921052)
+
+ -- Utkarsh Gupta <guptautkarsh2102@gmail.com>  Fri, 01 Feb 2019 18:19:36 +0530

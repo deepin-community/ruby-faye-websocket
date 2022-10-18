@@ -1,0 +1,34 @@
+Source: ruby-faye-websocket
+Maintainer: Debian Ruby Team <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Utkarsh Gupta <utkarsh@debian.org>
+Section: ruby
+Testsuite: autopkgtest-pkg-ruby
+Priority: optional
+Build-Depends: debhelper-compat (= 12),
+               gem2deb,
+               ruby-eventmachine,
+               ruby-websocket-driver
+Standards-Version: 4.5.1
+Vcs-Browser: https://salsa.debian.org/ruby-team/ruby-faye-websocket
+Vcs-Git: https://salsa.debian.org/ruby-team/ruby-faye-websocket.git
+Homepage: https://github.com/faye/faye-websocket-ruby
+Rules-Requires-Root: no
+XS-Ruby-Versions: all
+
+Package: ruby-faye-websocket
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ruby-eventmachine,
+         ruby-websocket-driver,
+         ${misc:Depends}
+Description: Standards-compliant WebSocket client and server
+ This is a general-purpose WebSocket implementation extracted from the Faye
+ project. It provides classes for easily building WebSocket servers and clients
+ in Ruby. It does not provide a server itself, but rather makes it easy to
+ handle WebSocket connections within an existing Rack application. It does not
+ provide any abstraction other than the standard WebSocket API.
+ .
+ It also provides an abstraction for handling EventSource connections, which
+ are one-way connections that allow the server to push data to the client. They
+ are based on streaming HTTP responses and can be easier to access via proxies
+ than WebSockets.
